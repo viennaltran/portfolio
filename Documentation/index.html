@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<meta charset="utf-8">
+		<title>PerfectR | Documentation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Stylesheets -->
+		<link href="css/main.css" rel="stylesheet" media="screen">
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/highlight.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+	</head>
+	
+	<body data-spy="scroll" data-target="#sidenav" data-offset="200">
+		<div id="top" class="jumbotron">
+			<div class="container text-center">
+				<h1>PerfectR</h1>
+				<p>Responsive Showcase / Bootstrap Template</p>
+				<br>
+				<p><a class="btn btn-success btn-lg" href="http://demos.q-themes.net/perfectr/" target="_blank">View Online Demo</a><br><small>Version 1.0.3</small></p>
+			</div>
+		</div>
+		<div class="container">
+		
+			<div class="row">
+				
+				<div id="sidebar" class="col-md-3">
+				
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Skip to section</h3>
+						</div>
+						<div id="sidenav" class="panel-body">
+							<ul class="list-unstyled nav sidenav">
+								<li class="sr-only"><a href="#top">Top</a></li>
+								<li>
+									<a href="#general">General</a>
+								
+									<ul class="list-unstyled nav sidenav">
+										<li><a href="#logo">Logo</a></li>
+										<li><a href="#favicons">Favicons</a></li>
+										<li><a href="#preloader">Preloader</a></li>
+									</ul>
+								
+								</li>
+								<li>
+									<a href="#css">CSS</a>
+								
+									<ul class="list-unstyled nav sidenav">
+										<li><a href="#grid">Grid</a></li>
+										<li><a href="#typography">Typography</a></li>
+										<li><a href="#buttons">Buttons</a></li>
+										<li><a href="#backgrounds">Backgrounds</a></li>
+										<li><a href="#icons">Icons</a></li>
+									</ul>
+								
+								</li>
+								<li>
+									<a href="#components">Components</a>
+								
+									<ul class="list-unstyled nav sidenav">
+										<li><a href="#sliders">Sliders</a></li>
+										<li><a href="#devices">Device Mockups</a></li>
+										<li><a href="#isotope">Isotope Gallery</a></li>
+										<li><a href="#twentytwenty">Image Comparison</a></li>
+										<li><a href="#twitter">Twitter</a></li>
+										<li><a href="#contact">Contact Form</a></li>
+									</ul>
+								
+								</li>
+								<hr>
+								<li><a href="#colors">Theme colors</a></li>
+								<li><a href="#scrollimations">Scrolling Animations</a></li>
+								<hr>
+								<li><a href="#changelog">Change Log</a></li>
+								<li><a href="#credits">Credits</a></li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+			
+				<div class="col-md-9">
+			
+					<div id="general" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">General</h3>
+						</div>
+						<div class="panel-body">
+							<h2 id="logo">Logo</h2><p><br></p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"site-logo transparent-logo"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/logo-transparent.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"logo"</span> /&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"site-logo"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/logo.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"logo"</span> /&gt;</span><br>
+</code></pre><p><br></p><p>Make your logo images <strong>70x480 px</strong>. If you don't want the transparent header then remove the class <code>navbar-transparent</code> form the <strong>main-nav</strong>. In this case you don't need the transparent logo. <br></p><p><br></p>
+							
+							<hr>
+							<h2 id="favicons">Favicons</h2><p><br></p><p>Inside the <code>&lt;head&gt;</code> tag you can see the Favicons links.</p>
+<pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- ==============================================</span><br><span class="hljs-comment">Favicons</span><br><span class="hljs-comment">=============================================== --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"shortcut icon"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/images/favicon.ico"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"apple-touch-icon"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/images/apple-touch-icon.png"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"apple-touch-icon"</span> <span class="hljs-attribute">sizes</span>=<span class="hljs-value">"72x72"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/images/apple-touch-icon-72x72.png"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"apple-touch-icon"</span> <span class="hljs-attribute">sizes</span>=<span class="hljs-value">"114x114"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/images/apple-touch-icon-114x114.png"</span>&gt;</span><br><br>
+</code></pre><p><br></p><p> Normally you won't need to change the markup for these, leave it as it is and replace the corresponding images in the <strong>/assets/images</strong> folder with your own images, following these rules:</p><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>File Name</th>
+									<th>Type</th>
+									<th>Size</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>favicon.ico</td>
+									<td>ICO</td>
+									<td>16 x 16</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>apple-touch-icon.png</td>
+									<td>PNG</td>
+									<td>57 x 57</td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>apple-touch-icon-72x72.png</td>
+									<td>PNG</td>
+									<td>72 x 72</td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>apple-touch-icon-114x114.png</td>
+									<td>PNG</td>
+									<td>114 x 114</td>
+								  </tr>
+								</tbody>
+							  </table><p class="text-warning">Note: DO NOT alter the filenames! Just make your own with your favorite image editor and replace them with the same filename.</p><p class="text-warning"><br></p>
+							
+							<hr>
+							<h2 id="preloader">Preloader</h2><p><br></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"preloader"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+</code></pre>
+<p>Remove this line from the top of the <code>body</code> tag if you don't need to use a preloader screen for your page.</p><p><br></p>
+							
+							
+						</div>
+					</div>
+					
+					<div id="css" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">CSS</h3>
+						</div>
+						<div class="panel-body">
+							<h2 id="grid">Grid</h2>
+							<p><br></p><p>Use the following classes to add top and bottom <strong>paddings</strong> to your elements:</p><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>CSS</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>pt-0</td>
+									<td>padding-top:0;</td>
+									
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>pt-40</td>
+									<td>padding-top:40px;</td>
+									
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>pt-80</td>
+									<td>padding-top:80px;</td>
+									
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>pt-120</td>
+									<td>padding-top:120px;</td>
+									
+								  </tr><tr><td valign="top">5<br></td><td valign="top">pt-160</td><td valign="top">padding-top:160px;</td></tr><tr><td valign="top">6<br></td><td valign="top">pt-200</td><td valign="top">padding-top:200px;</td></tr><tr><td valign="top">7<br></td><td valign="top">pt-240</td><td valign="top">padding-top:240px;</td></tr><tr><td valign="top">8<br></td><td valign="top">pt-280</td><td valign="top">padding-top:280px;</td></tr><tr><td valign="top">9<br></td><td valign="top">pb-0</td><td valign="top">padding-bottom:0;</td></tr><tr><td valign="top">10<br></td><td valign="top">pb-40</td><td valign="top">padding-bottom:40px;</td></tr><tr><td valign="top">11<br></td><td valign="top">pb-80</td><td valign="top">padding-bottom:80px;</td></tr><tr><td valign="top">12<br></td><td valign="top">pb-120</td><td valign="top">padding-bottom:120px;</td></tr><tr><td valign="top">13<br></td><td valign="top">pb-160</td><td valign="top">padding-bottom:160px;</td></tr><tr><td valign="top">14<br></td><td valign="top">pb-200</td><td valign="top">padding-bottom:200px;</td></tr><tr><td valign="top">15<br></td><td valign="top">pb-240</td><td valign="top">padding-bottom:240px;</td></tr><tr><td valign="top">16<br></td><td valign="top">pb-280</td><td valign="top">padding-bottom:280px;</td></tr>
+								</tbody>
+							  </table><p class="text-info">Note: On mobile sizes (smaller than 767px) paddings bigger than 120px will get down to 120px. So adding pt-200 to an element will give it 200px padding in screens bigger than 767px but 120px in screens smaller than 767px.</p><p class="text-info"><br></p><p class="text-info"><br></p><p>Use the following classes to add top and bottom <strong>margins</strong> to your elements:</p><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>CSS</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>mt-0</td>
+									<td>margin-top:0;</td>
+									
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>mt-10</td>
+									<td>margin-top:10px;</td>
+									
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>mt-20</td>
+									<td>margin-top:20px;</td>
+									
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>mt-40</td>
+									<td>margin-top:40px;</td>
+									
+								  </tr><tr><td valign="top">5<br></td><td valign="top">mt-60</td><td valign="top">margin-top:60px;</td></tr><tr><td valign="top">6<br></td><td valign="top">mt-80</td><td valign="top">margin-top:80px;</td></tr><tr><td valign="top">7<br></td><td valign="top">mt-100</td><td valign="top">margin-top:100px;</td></tr><tr><td valign="top">8<br></td><td valign="top">mt-120</td><td valign="top">margin-top:120px;</td></tr><tr><td valign="top">9<br></td><td valign="top">mt-140<br></td><td valign="top">margin-top:140px;</td></tr><tr><td valign="top">10<br></td><td valign="top">mt-160<br></td><td valign="top">margin-top:160px;</td></tr><tr><td valign="top">11</td><td valign="top">mb-0</td><td valign="top">margin-bottom:0;</td></tr><tr><td valign="top">12<br></td><td valign="top">mb-10</td><td valign="top">margin-bottom:10px;</td></tr><tr><td valign="top">13<br></td><td valign="top">mb-20</td><td valign="top">margin-bottom:20px;</td></tr><tr><td valign="top">14<br></td><td valign="top">mb-40</td><td valign="top">margin-bottom:40px;</td></tr><tr><td valign="top">15<br></td><td valign="top">mb-60</td><td valign="top">margin-bottom:60px;</td></tr><tr><td valign="top">16<br></td><td valign="top">mb-80</td><td valign="top">margin-bottom:80px;</td></tr><tr><td valign="top">17<br></td><td valign="top">mb-100</td><td valign="top">margin-bottom:100px;</td></tr><tr><td valign="top">18<br></td><td valign="top">mb-120</td><td valign="top">margin-bottom:120px;</td></tr><tr><td valign="top">19<br></td><td valign="top">mb-140</td><td valign="top">margin-bottom:140px;</td></tr><tr><td valign="top">20<br></td><td valign="top">mb-160</td><td valign="top">margin-bottom:160px;</td></tr>
+								</tbody>
+							  </table>
+							<br><hr>
+							<h2 id="typography">Typography</h2>
+							<p>You can control the appearance of your typography using some classes. Refer to the tables below:</p><p><br></p>
+<h3>Font color</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Color</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>default</td>
+									<td>the default color depends on the background color<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>text-gray</td>
+									<td>Gray text<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>text-dark</td>
+									<td>Dark text<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>text-color</td>
+									<td>Main color text<br></td>
+									
+								  </tr>
+								</tbody>
+							  </table><h4><br></h4><h3>Font size</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Size</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>default</td>
+									<td>1 em = 16px<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>text-lg</td>
+									<td>1.5 em</td>
+									
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>text-2x</td>
+									<td>2 em<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>text-lg-2x</td>
+									<td>2.5 em<br></td>
+									
+								  </tr><tr><td valign="top">5<br></td><td valign="top">text-3x</td><td valign="top">3 em</td></tr>
+								</tbody>
+							  </table><h4><br></h4><h3>Font weight</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Weight</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>default</td>
+									<td>300<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">text-xlight</td><td valign="top">100<br></td></tr><tr>
+									<td>3<br></td>
+									<td>text-light</td>
+									<td>300</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>text-normal</td>
+									<td>400<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>text-bold</td>
+									<td>600<br></td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">text-xbold</td><td valign="top">900</td></tr>
+								</tbody>
+							  </table>
+							<h4><br></h4><h3>Example</h3>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-2x mb-40 text-color text-bold"</span>&gt;Big Bold and Colored</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>The above text will be 32px in size (2x16px) bold and will have the main theme color. <br></p><p><br></p><hr>
+<br>
+							<h2 id="buttons">Buttons</h2>
+							<p>Make different buttons controlling size, style and colors.</p><p><br></p><h3>Size</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Size</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>btn</td>
+									<td>medium (default)<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">btn btn-xs<br></td><td valign="top">extra small<br></td></tr><tr>
+									<td>3<br></td>
+									<td>btn btn-sm<br></td>
+									<td>small</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>btn btn-lg</td>
+									<td>large</td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>btn btn-xl</td>
+									<td>extra large<br></td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">btn-block<br></td><td valign="top">100% width<br></td></tr>
+								</tbody>
+							  </table><p><br></p><h3>Color</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Color</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>btn</td>
+									<td>Theme color (default)<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">btn btn-dark<br></td><td valign="top">Dark color<br></td></tr><tr>
+									<td>3<br></td>
+									<td>btn btn-light<br></td>
+									<td>White color<br></td>
+									
+								  </tr>
+								  
+								  
+								</tbody>
+							  </table><p><br></p><h3>Style</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Style</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>btn</td>
+									<td>Solid, rounded corners, change opacity on hover<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">btn-rect</td><td valign="top">No rounded corners<br></td></tr><tr>
+									<td>3<br></td>
+									<td>btn-3d</td>
+									<td>3d style with inset box shadow<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>btn-border</td>
+									<td>Transparent background with borders<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>btn-hover-border</td>
+									<td>Solid, becomes transparent on hover<br></td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">btn-hover-solid</td><td valign="top">Transparent background, has background on hover<br></td></tr>
+								</tbody>
+							  </table>
+							<br>
+<h3>Example</h3>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-block btn-rect btn-3d"</span>&gt;</span>Apply Form<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p>The above button will have the main theme color, 3d effect, no rounded corners and it will be 100% of it's parent.</p><p><br></p><hr>
+							<h2 id="backgrounds">Backgrounds</h2>
+							<p>Change the background of an element using the following classes:<br></p><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Background</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>bg-light</td>
+									<td>white background<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">bg-gray</td><td valign="top">light gray background</td></tr><tr>
+									<td>3<br></td>
+									<td>bg-dark</td>
+									<td>dark background</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>bg-color</td>
+									<td>Theme color background</td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>bg-image</td>
+									<td>Image background. <code>background-attachment:scroll</code><br></td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">bg-image fixed-bg<br></td><td valign="top">Image background. <code>background-attachment:fixed</code></td></tr>
+								</tbody>
+							  </table>
+							<p class="text-info">Tip: Combine classes <code>bg-image</code> and <code>text-dark</code> if your background image is too light and text is unreadable.</p><p class="text-info"><br></p><hr>
+							<h2 id="icons">Icons</h2>
+							<p>Icons are used everywhere. For services, features, lists etc. Make a styled inline icon easily using some classes:</p><p class="">Visit <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">FontAwesome</a> for all icons</p>
+							<br>
+							<h3>Size</h3><table class="table table-striped table-bordered">
+								
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Size</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>icon-inline</td>
+									<td>medium (default)<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">icon-inline icon-xs<br></td><td valign="top">extra small<br></td></tr><tr>
+									<td>3<br></td>
+									<td>icon-inline icon-sm</td>
+									<td>small</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>icon-inline icon-lg</td>
+									<td>large</td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>icon-inline icon-xl</td>
+									<td>extra large<br></td>
+									
+								  </tr>
+								</tbody>
+							  </table><p><br></p><h3>Backgrounds and borders<br></h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Style</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>icon-inline</td>
+									<td>unstyled (default)<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">icon-solid-white<br></td><td valign="top">White background<br></td></tr><tr>
+									<td>3<br></td>
+									<td>icon-solid-gray</td>
+									<td>Gray background</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>icon-solid-dark</td>
+									<td>Dark background</td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>icon-solid-color</td>
+									<td>Theme color background</td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">icon-border-white</td><td valign="top">White border<br></td></tr><tr><td valign="top">7<br></td><td valign="top">icon-border-gray</td><td valign="top">Gray border</td></tr><tr><td valign="top">8<br></td><td valign="top">icon-border-dark</td><td valign="top">Dark border</td></tr><tr><td valign="top">9<br></td><td valign="top">icon-border-color</td><td valign="top">Theme color border</td></tr>
+								</tbody>
+							  </table><p><br></p><h3>Shape<br></h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Size</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>icon-inline</td>
+									<td>Rectangle (default)</td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">icon-circle<br></td><td valign="top">Circle icon<br></td></tr><tr>
+									<td>3<br></td>
+									<td>icon-round</td>
+									<td>Rounded corners<br></td>
+									
+								  </tr>
+								  
+								  
+								</tbody>
+							  </table>
+<h3><br>
+	</h3><h3>Example</h3>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-inline icon-circle icon-solid-color"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+</code></pre>
+<p>A circle icon with colored background and medium size.</p><p><br></p><p class="">Visit <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">FontAwesome</a> for all icons</p>
+						</div>
+					</div>
+				
+					<div id="components" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Components</h3>
+						</div>
+						<div class="panel-body">
+							<h2 id="sliders">Sliders</h2>
+							<p>Sliders are pre-configured using the <a href="https://www.woothemes.com/flexslider/">Flexslider</a> script. You don't need to touch any javascript code to take control of sliders. Just add some classes and data to the <code>.flexslider</code> element.</p><p><br></p>
+							<h3>Example
+  </h3>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"testimonials flexslider no-direction-nav effect-slide"</span> <span class="hljs-attribute">data-speed</span>=<span class="hljs-value">"5000"</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"slides"</span>&gt;</span><br>	<br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-box icon-box-round mb-40 icon-top-left"</span>&gt;</span><br>		<br>			...<br>			<br>		<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre><h4><br></h4><h3>Slider Speed</h3>
+<p>Use the <code>data-speed</code> attribute to change the timing of the slides. Default value is <strong>5000 = 5s</strong>.</p><p><br></p><h3>Helper Classes</h3><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Class</th>
+									<th>Result</th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>controls-sm</td>
+									<td>Smaller controls<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">controls-lg<br></td><td valign="top">Large controls<br></td></tr><tr>
+									<td>3<br></td>
+									<td>controls-inside</td>
+									<td>Controls inside slider<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>controls-visible</td>
+									<td>Controls always visible<br></td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>no-direction-nav</td>
+									<td>Disable direction buttons<br></td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">no-bullet-nav</td><td valign="top">Disable bullet navigation<br></td></tr><tr><td valign="top">7<br></td><td valign="top">pause</td><td valign="top">Stop autoplay<br></td></tr><tr><td valign="top">8<br></td><td valign="top">effect-slide</td><td valign="top">Slide effect. Default is fade.<br></td></tr><tr><td valign="top">9<br></td><td valign="top">effect-zoom</td><td valign="top">Zoom in effect<br></td></tr><tr><td valign="top">10<br></td><td valign="top">effect-zoom-inverse</td><td valign="top">Zoom out effect<br></td></tr>
+								</tbody>
+							  </table><p><br></p><hr><h2 id="devices">Device Mockups</h2>
+							<p>Device mockups are ready for your screenshots. All you have to do is replace the current images with your own, single images or sliders. Refer to the table below for the dimensions of your screenshots.<br></p><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Device</th>
+									<th>Dimensions<br></th>
+									
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>iMac</td>
+									<td>590x330px<br></td>
+									
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top">Macbook</td><td valign="top">590x370px</td></tr><tr>
+									<td>3<br></td>
+									<td>iPad</td>
+									<td>280x370px</td>
+									
+								  </tr>
+								  <tr>
+									<td>4<br></td>
+									<td>iPad Landscape<br></td>
+									<td>370x280px</td>
+									
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td>iPhone</td>
+									<td>170x310px</td>
+									
+								  </tr><tr><td valign="top">6<br></td><td valign="top">iPhone Landscape<br></td><td valign="top">310x170px</td></tr>
+								</tbody>
+							  </table>
+							<h3><br></h3><h3>Rotating Devices</h3>
+<p>Mobile devices can rotate. When they rotate, the screenshot changes from portrait to landscape view. Make 2 versions of each image or slide and use the <code>img-portrait</code> and <code>img-landscape</code> classes.<br></p><br><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive img-portrait"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/iphone-screenshot.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive img-landscape"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/iphone-screenshot-landscape.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>
+</code></pre><h3><br></h3><h3>Scrolling Content<br></h3>
+<p>Use the following example markup to make your device content scroll. Your images can have unlimited height .</p><p><br></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ipad-mockup-content overflow-scrollbar"</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"scroll-content"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive img-portrait"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/ipad-screenshot-scroll.jpg"</span> /&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive img-landscape"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/ipad-screenshot-scroll-landscape.jpg"</span> /&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre><hr>
+							<h2 id="isotope">Isotope Gallery</h2>
+							<p><br></p><p>The following markup shows how the filter buttons work. Each button has its filter set in the <code>data-filter</code> attribute. Use the <code>data-target</code> attribute to target the isotope grid. This is useful if you need to have more than one isotope grids the same page. <br></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"filter-buttons text-center mt-60 mb-40"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#grid-1"</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-unstyled list-inline"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active filter-button"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">"*"</span>&gt;</span>All Projects<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"filter-button"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".cat-1"</span>&gt;</span>My Websites<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"filter-button"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".cat-2"</span>&gt;</span>My Apps<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"filter-button"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".cat-3"</span>&gt;</span>My Logos<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre><br><h3>The Grid</h3>
+<p>Example markup of the isotope grid. Class&nbsp; <code>grid</code> is necessary&nbsp; for the grid container and <code>grid-item</code> for every grid child.<br></p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"grid-1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid grid-gap-sm grid-3-cols"</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-item cat-1"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/thumb-1.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-item cat-2 cat-1"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/thumb-2.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br>	...<br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-item cat-3"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/thumb-3.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre><p><br></p><p>Wrap your images in an <code>&lt;a&gt;</code>  tag to link to the project page or to an external page.<br></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-item cat-1"</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"single-project.html"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/thumb-1.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre><hr>
+							<h2 id="twentytwenty">Image Comparison</h2>
+							<p><br></p><p>Image comparison is based on the <a href="http://zurb.com/playground/twentytwenty">twenty-twenty</a> script. Use the following markup with two same size images.</p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"twentytwenty-container"</span>&gt;</span><br>	<span class="hljs-comment">&lt;!-- The before image is first --&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/code.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br>	<span class="hljs-comment">&lt;!-- The after image is last --&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/mac-thumb.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre>You can use it as device content or anywhere in your page.<br><hr>
+							<h2 id="twitter">Twitter</h2><br><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"footer-twitter"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"twitter-slider flexslider dynamic-slides no-bullet-nav"</span> <br><span class="hljs-attribute">data-widget-id</span>=<span class="hljs-value">"386017398488186880"</span> <span class="hljs-attribute">data-tweets-length</span>=<span class="hljs-value">"3"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>
+</code></pre>
+							
+							<br>
+							<p>Twitter component uses the <a href="http://www.jasonmayes.com/projects/twitterApi/" target="_blank">twitterFetcher</a> script to show your latest tweets<strong></strong>. You don't need to provide any content here. Change only the <code>data-</code> attributes as described below:</p>
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Data</th>
+									<th>Description</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td nowrap="">data-widget-id</td>
+									<td>Your twitter widget ID. e.g: <code>data-widget-id="345690956013633536"</code>.</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td nowrap="">data-tweets-length</td>
+									<td>How many of your latest tweets you want to cycle through. Must be a number between 1 - 20. e.g:<code>data-tweets-length="3"</code></td>
+								  </tr>
+								</tbody>
+							  </table>
+							<p class="lead"><br></p><p class="lead">HOW TO CREATE A VALID WIDGET ID TO USE</p>
+							<ol>
+								<li>
+									<p>Go to <a href="http://www.twitter.com">www.twitter.com</a> and sign in as normal. Then go to your <strong>Settings page</strong>.</p>
+								</li>
+								<li>
+									<p>Go to <strong>Widgets</strong> on the left hand side.</p>
+								</li>
+								<li>
+									<p>Create a new widget for what you need e.g. "user timeline" or "favorites" etc.</p>
+								</li>
+								<li>
+									<p>Now go back to Settings page, and then go to Widgets page again. You should see the widget you just created.<br> Click <strong>edit</strong>.</p>
+								</li>
+								<li>
+									<p>Now look at the <strong>URL in your web browser</strong> and you will see a long number like this: 345735908357048478. Use that as your Widget ID!</p>
+								</li></ol><hr>
+							<h2 id="contact">Contact Form</h2>
+							<p>Contact forms are pre-configured with standard name, email and message fields. I you need to add more fields follow the existing structure and add the class requiredField for validation.</p><p><br></p><h3>Form Validation</h3>
+<p>The validation script work as follows:</p><ul><li>First checks if all required fields are filled.</li><li>Then checks if the email is valid</li><li>If everything is OK, send the message.</li></ul><p>So, all you need to do is customize the validation text for every step.<br></p>
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-error empty-fields"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-exclamation-triangle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Please fill the required fields<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-error email-error"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-exclamation-triangle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Email looks invalid<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-success"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-check"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Your message has been sent<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>
+</code></pre>
+
+<h3><br></h3><h3>The PHP contact script</h3><p>The contact.php script is located in folder assets/php. Open it and edit the following lines for the script to work.<br></p>
+<pre><code class="hljs php"><span class="hljs-variable">$emailTo</span> = <span class="hljs-string">'youremail@example.com'</span>;<br><span class="hljs-variable">$siteTitle</span> = <span class="hljs-string">'Your Site Title'</span>;
+</code></pre>
+<p><br></p><p class="text-warning">If you need to customize it further and extend the script to a more complicated message form, all you need is some standard PHP skills. If you don't know what you are doing, then better leave it as is. &nbsp; <br></p>
+						</div>
+					</div>
+					
+					<div id="colors" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Theme Colors</h3>
+						</div>
+						<div class="panel-body">
+							<p><br></p><p><br></p><p>PerfectR comes with 8 predefined color schemes.<br> To use the one you like just include the corresponding CSS file right after the <code>perfectr.css</code> file.</p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/css/perfectr.css"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"assets/css/perfectr-color-1.css"</span>&gt;</span><br>
+</code></pre>
+							
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Color</th>
+									<th>CSS Filename</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td style="background-color:#2997AB;"></td>
+									<td>perfectr-color-1.css</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td style="background-color:#F25454;"></td>
+									<td>perfectr-color-2.css</td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td style="background-color:#00AB66;"></td>
+									<td>perfectr-color-3.css</td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td style="background-color:#E5C41A;"></td>
+									<td>perfectr-color-4.css</td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td style="background-color:#EA8825;"></td>
+									<td>perfectr-color-5.css</td>
+								  </tr>
+								  <tr>
+									<td>6</td>
+									<td style="background-color:#2568CB;"></td>
+									<td>perfectr-color-6.css</td>
+								  </tr>
+								  <tr>
+									<td>7</td>
+									<td style="background-color:#8AD542;"></td>
+									<td>perfectr-color-7.css</td>
+								  </tr>
+								  <tr>
+									<td>8</td>
+									<td style="background-color:#6B798F;"></td>
+									<td>perfectr-color-8.css</td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>
+					</div>
+					
+					<div id="scrollimations" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Scrolling Animations</h3>
+						</div>
+						<div class="panel-body">
+							<p><br></p><p><br></p><p>As you scroll the page you 'll notice that several components are being animated when you reach them.<br>
+							To make a component animate just add the class <code>scrolling-animation</code> and one of the effects classes, as shown below.</p>
+							
+							<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-uppercase text-bold mb-40 scrolling-animation fade-up"</span>&gt;</span>Drop me a line<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><br></code></pre>
+							<p><br></p><p>Currently available effects are:</p>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Effect Class</th>
+									<th>Description</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td nowrap=""><code>scale-in</code></td>
+									<td>The component scales up while fading in. <br></td>
+								  </tr>
+								  <tr><td valign="top">2<br></td><td valign="top"><code>fade-up</code></td><td valign="top">The component is animating from bottom to top while fading in.</td></tr><tr><td valign="top">3<br></td><td valign="top"><code>fade-down</code></td><td valign="top">The component is animating from top to bottom while fading in.</td></tr><tr>
+									<td>4</td>
+									<td nowrap=""><code>fade-in</code></td>
+									<td>The component fades in. <br></td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td nowrap=""><code>fade-left</code></td>
+									<td>The component is animating from right to left while fading in.<br></td>
+								  </tr>
+								  <tr>
+									<td>6</td>
+									<td nowrap=""><code>fade-right</code></td>
+									<td>The component is animating from left to right while fading in. <br></td>
+								  </tr>
+								</tbody>
+							  </table>
+<br><p>To disable animations you can delete the <code>scrolling animation</code> class from all components, or just add the class <code>disable-animations</code> to body tag.<br></p><pre><code class="hljs javascript">&lt;body <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"disable-animations"</span> data-spy=<span class="hljs-string">"scroll"</span> data-target=<span class="hljs-string">"#site-nav"</span> data-offset=<span class="hljs-string">"300"</span>&gt;
+</code></pre>
+						</div>
+					</div>
+					
+					<div id="changelog" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Change Log</h3>
+						</div>
+						<div class="panel-body">
+						
+							<h3><br><span class="text-info"></span></h3><h3><span class="text-info">Version 1.0.3 </span><span class="h5">March 07 2016</span></h3>
+							<br>
+							<ul>
+								<li>Updated Twitterfetcher script</li>
+							</ul>
+						
+							<h3><br><span class="text-info"></span></h3><h3><span class="text-info">Version 1.0.2 </span><span class="h5">March 01 2016</span></h3>
+							<br>
+							<ul>
+								<li>Fixed background images bug on iOS</li>
+								<li>Fixed minor styling issues</li>
+							</ul>
+							
+							<h3><br><span class="text-info"></span></h3><h3><span class="text-info">Version 1.0.1 </span><span class="h5">February 27 2016</span></h3>
+							<br>
+							<ul>
+								<li>Updated Bootstrap to 3.3.6</li>
+								<li>Added dark version for all pages</li>
+								<li>Added custom-color.less<br></li>
+							</ul>
+							
+							<br>
+							<h3><span class="text-info">Version 1.0 </span><span class="h5"> January 27 2016</span></h3>
+							<br>
+							<ul><li>Initial Release</li></ul><ul>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="credits" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Credits</h3>
+						</div>
+						<div class="panel-body">
+							<h3><br></h3><h3>JS Scripts</h3>
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Script</th>
+									<th>By</th>
+									<th>Licence</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td>Easy pie chart</td>
+									<td><a href="http://github.com/rendro/easy-pie-chart/" target="_blank">Robert Fleischmann</a></td>
+									<td><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td>Flexslider</td>
+									<td><a href="http://www.woothemes.com/flexslider/" target="_blank">Woothemes</a></td>
+									<td><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td>NiceScroll</td>
+									<td><a href="http://nicescroll.areaaperta.com/" target="_blank">Inuyaska</a></td>
+									<td><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td>Twitter Fetcher</td>
+									<td><a href="http://www.jasonmayes.com/projects/twitterApi/" target="_blank">Jason Mayes</a></td>
+									<td></td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td>Waypoints</td>
+									<td><a href="http://imakewebthings.com/jquery-waypoints/" target="_blank">I Make Web Things</a></td>
+									<td><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td>
+								  </tr><tr><td valign="top">6<br></td><td valign="top">Isotope<br></td><td valign="top"><a href="http://isotope.metafizzy.co" target="_blank">Metafizzy<br></a></td><td valign="top">Commercial License<br></td></tr><tr><td valign="top">7<br></td><td valign="top">CountTo<br></td><td valign="top"><a href="https://github.com/mhuggins/jquery-countTo" target="_blank">Mhuggins</a></td><td valign="top"><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td></tr><tr><td valign="top">8<br></td><td valign="top">Stellar<br></td><td valign="top"><a href="http://markdalgleish.com/projects/stellar.js" target="_blank">Mark Dalgleish</a></td><td valign="top"><a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></td></tr><tr><td valign="top">9<br></td><td valign="top">twenty-twenty<br></td><td valign="top"><a href="http://zurb.com/playground/twentytwenty" target="_blank">Zurb</a></td><td valign="top"><br></td></tr>
+								</tbody>
+							</table>
+							<br>
+							<h3>Fonts</h3>
+							<br>
+							<ul>
+								<li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+								<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+							</ul>
+							<br>
+							<h3>Demo Images</h3>
+							<br>
+							<ul>
+								<li><a href="http://zippypixels.com/product/mockups/devices/24-free-flat-vector-apple-device-mockups-all-apple-devices-including-iphone-6s6s-plus/?utm_source=dribbble.com&amp;utm_medium=referral&amp;utm_campaign=dribbble_sharing" target="_blank">Apple Device Mockups by zippypixels.com<br></a></li><li><a href="https://dribbble.com/shots/2472894-E-Commerce-Stumptown-Sketch-File" target="_blank">https://dribbble.com/shots/2472894-E-Commerce-Stumptown-Sketch-File</a></li><li><a href="https://dribbble.com/shots/2473381-Medic-Alsace-E-Commerce-WebSite" target="_blank">https://dribbble.com/shots/2473381-Medic-Alsace-E-Commerce-WebSite</a></li><li><a href="https://dribbble.com/shots/2472747-Wonderwild" target="_blank">https://dribbble.com/shots/2472747-Wonderwild</a></li><li><a href="https://dribbble.com/shots/2473558-Spaceteam-Card" target="_blank">https://dribbble.com/shots/2473558-Spaceteam-Card</a></li><li><a href="https://dribbble.com/shots/2472990-Tixr-iOS-app-landing-page" target="_blank">https://dribbble.com/shots/2472990-Tixr-iOS-app-landing-page</a></li><li><a href="https://dribbble.com/shots/2473466-Onepro-Home-Logistic" target="_blank">https://dribbble.com/shots/2473466-Onepro-Home-Logistic</a></li><li><a href="https://dribbble.com/shots/2472898--It-is-not-down-in-any-map" target="_blank">https://dribbble.com/shots/2472898--It-is-not-down-in-any-map</a></li><li><a href="https://dribbble.com/shots/2472777-Paris" target="_blank">https://dribbble.com/shots/2472777-Paris</a></li><li><a href="https://dribbble.com/shots/2472847-Product-Card-UI-Exercise" target="_blank">https://dribbble.com/shots/2472847-Product-Card-UI-Exercise</a></li><li><a href="http://pixabay.com/" target="_blank">Pixabay</a></li></ul>
+						</div>
+					</div>
+					
+					<p class="lead text-center">THE END!</p>
+					<p class="text-center">Once again thank you for purchasing this template.<br>If you have any questions that are beyond the scope of this documentation feel free to contact us via email:<br><a href="mailto:support@q-themes.net">support@q-themes.net</a>*.</p>
+					<p class="text-center"><em>*Please don't forget to include your License ID so we can verify your purchase.</em></p>
+					<br>
+					<p class="lead text-center"><a href="#top">Go to top.</a></p>
+					<br>
+				</div>
+				
+			</div>
+		
+		</div>
+
+		<script src="js/libs/jquery-1.8.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/highlight.pack.js"></script>
+		<script>
+			var $sideBar = $('#sidebar .panel');
+			$sideBar.affix({
+				offset: {
+				  top: function () {
+					var offsetTop      = $sideBar.offset().top;
+
+					return (this.top = offsetTop - 50)
+				  }
+				}
+			});
+			
+			$( 'pre code.tohljs' ).each(function(){
+				$(this).text( $(this).html() );
+			})
+			
+			$('pre code.tohljs').each(function(i, block) {
+				$(this).removeClass('tohljs');
+				hljs.highlightBlock(block);
+			});
+				
+		</script>
+	
+
+</body></html>
