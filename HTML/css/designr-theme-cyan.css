@@ -398,7 +398,7 @@ header.jumbotron{
     display:inline-block;
     margin:0;
     padding:10px 30px 10px 5px;
-    font-size:110px;
+    font-size:100px;
     line-height:110px;
     font-weight:900;
     text-transform:uppercase;
@@ -422,7 +422,7 @@ header.jumbotron{
 -----Services Styles------
 ------------------------*/
 
-#services{
+#hobby{
     background:#fff;
     color:#999;
     padding:80px 0;
@@ -546,7 +546,7 @@ header.jumbotron{
 }
 
 #about p {
-    font-size:24px;
+    font-size:18px;
     line-height:36px;
     font-weight:300;
     margin-bottom:42px;
@@ -628,7 +628,8 @@ header.jumbotron{
 
 #portfolio .section-title {
     font-weight:300;
-    margin-bottom:60px;
+    /* margin-bottom:60px; */
+    margin: 0 auto;
 }
 
 #portfolio .section-title [class*=fa]{
