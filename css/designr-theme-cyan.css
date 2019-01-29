@@ -619,7 +619,8 @@ header.jumbotron{
 
 .icon,svg{
     display: block;
-    width: 100%;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .icon-container{
