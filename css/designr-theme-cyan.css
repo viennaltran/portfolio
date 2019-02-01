@@ -1,6 +1,10 @@
 /*----------------------
 ---Main Layout Styles---
 ------------------------*/
+ul{
+    list-style-type: none;
+}
+
 .img-center{
     margin:20px auto;
 }
@@ -160,7 +164,8 @@ body {
 
 .btn-theme{
 	color:#fff;
-	background-color:#8aaad9;
+    /* background-color:#8aaad9; */
+    background-color: royalblue;
 	padding:15px 90px;
 	font-size:24px;
 	font-weight:300;
@@ -1112,7 +1117,8 @@ header.jumbotron{
 #contact {
     background:transparent;
     color:#fff;
-	padding:80px 0; 
+    padding:80px 0; 
+    /* background-color: #8aaad9; */
 }
 
 #contact .section-title {
@@ -1262,6 +1268,16 @@ header.jumbotron{
     right:-10px;
     font-size:16px;
     font-weight:400;
+}
+
+.contact-icon{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+.contact-title{
+    color: darkblue;
 }
 
 /*----------------------
@@ -1623,7 +1639,7 @@ h1.section-title{
 
 
 p {
-    font-size:16px;
+    font-size:13px;
     line-height:21px;
 }
 
