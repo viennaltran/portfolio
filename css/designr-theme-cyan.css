@@ -577,6 +577,7 @@ header.jumbotron{
 
 #skills {
     padding-top:80px;
+    padding-bottom: 80px;
     color:#637187;
 	background:#fff;
 }
@@ -962,8 +963,9 @@ header.jumbotron{
 
 .modal-body h1{
     color:#8aaad9;
-    margin:200px 0 24px;
+    /* margin:200px 0 24px; */
     font-size:32px;
+    text-align: center;
 }
 
 .modal-body .project-descr{
@@ -1004,28 +1006,29 @@ header.jumbotron{
 }
 
 /*----------------------
------Twitter Styles-----
+-----resume Styles-----
 ------------------------*/
 
-#twitter {
+#resume {
     color:#fff;
     background:#8aaad9;
     padding:60px 0;
     max-width:100% !important;
     overflow:hidden;
+    text-align: center;
 }
 
-#twitter a:hover,
-#twitter a:active,
-#twitter a:focus{
+#resume a:hover,
+#resume a:active,
+#resume a:focus{
     text-decoration:none;
 }
 
-#twitter h1{
+#resume h1{
     position:relative;
 }
 
-#twitter .tweet{
+#resume .tweet{
     font-size:24px;
     line-height:36px;
     font-weight:300;
@@ -1033,18 +1036,18 @@ header.jumbotron{
     margin-bottom:40px;
 }
 
-#twitter .tweet a:hover{
+#resume .tweet a:hover{
     text-decoration:underline;
 }
 
-#twitter .timePosted{
+#resume .timePosted{
     display:inline-block;
     font-size:16px;
     font-weight:300;
     margin-bottom:20px;
 }
 
-#twitter .interact{
+#resume .interact{
     margin-left:20px;
     padding-right:80px;
     display:inline-block;
@@ -1052,20 +1055,20 @@ header.jumbotron{
     font-weight:300;
 }
 
-#twitter .interact a {
+#resume .interact a {
     margin-right:6px;
 }
 
-#twitter .twitter-icon {
+#resume .resume-icon {
     padding-top:6px;
     text-align:center;
 }
 
-#twitter .fa-twitter {
+#resume .fa-twitter {
     font-size:60px;
 }
 
-#twitter-slider{
+#resume-slider{
     border:none;
     box-shadow:none;
     background:transparent;
@@ -1073,19 +1076,19 @@ header.jumbotron{
     padding:0;
 }
 
-#twitter-slider .flex-direction-nav {
+#resume-slider .flex-direction-nav {
     display:block;
     position:absolute;
     bottom:10px;
     right:0;
 }
 
-#twitter-slider .flex-direction-nav li{
+#resume-slider .flex-direction-nav li{
     display:inline;
 }
 
-#twitter .flex-direction-nav .flex-prev,
-#twitter .flex-direction-nav .flex-next{
+#resume .flex-direction-nav .flex-prev,
+#resume .flex-direction-nav .flex-next{
     background:transparent;
     background-image:none;
     display:inline;
@@ -1104,10 +1107,28 @@ header.jumbotron{
     color:#fff;
 }
 
-#twitter-slider .flex-direction-nav a:hover,
-#twitter-slider .flex-direction-nav a:active,
-#twitter-slider .flex-direction-nav a:focus{
+#resume-slider .flex-direction-nav a:hover,
+#resume-slider .flex-direction-nav a:active,
+#resume-slider .flex-direction-nav a:focus{
     text-decoration:none;
+}
+
+#resume-button {
+    background-color:cadetblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#resume-button:hover{
+    background-color:lightblue; 
+    
 }
 
 /*----------------------
@@ -1150,6 +1171,7 @@ header.jumbotron{
     margin:0;
     padding:0;
     margin-bottom:24px;
+    text-align:center;
 }
 
 #contact .socials li{
@@ -1277,7 +1299,7 @@ header.jumbotron{
 }
 
 .contact-title{
-    color: darkblue;
+    color: aliceblue;
 }
 
 /*----------------------
@@ -1373,7 +1395,9 @@ header.jumbotron{
     line-height:24px;
     font-weight:300;
 }
-
+.copyright{
+    text-align:center;
+}
 
 /*------------------------
 ---Scrolling animations---
