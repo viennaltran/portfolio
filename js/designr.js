@@ -131,6 +131,19 @@ $(document).ready(function() {
 			slidesHtml = '<ul class="slides">',
 
 			slides = elem.data('images').split(',');
+		
+		if(title==='Pocket Cards'){
+			$('#pocketcards-repo').removeClass('hide');
+		}else if (title==='Grace Hopper'){
+			$('#pocketcards-repo').addClass('hide');
+			$('#gracehopper-repo').removeClass('hide');
+		}else if (title==='Student Grade Table'){
+			$('#pocketcards-repo').addClass('hide');
+			$('#gracehopper-repo').addClass('hide');
+			$('#sgt-repo').removeClass('hide');
+		}else {
+			return;
+		}
 
 		for (var i = 0; i < slides.length; ++i) {
 			slidesHtml = slidesHtml + '<li><img src='+slides[i]+' alt=""></li>';
@@ -144,6 +157,9 @@ $(document).ready(function() {
 			$(this).find('.btn').attr('href',link);
 			$(this).find('.project-descr').html(descr);
 			$(this).find('.image-wrapper').addClass('flexslider').html(slidesHtml);
+
+
+			
 			
 			setTimeout(function(){
 				$('.image-wrapper.flexslider').flexslider({
