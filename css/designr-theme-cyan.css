@@ -751,6 +751,9 @@ header.jumbotron{
 	transform: scale(1);
     -webkit-transition:-webkit-transform 0.3s ease-out;
     transition:transform 0.3s ease-out;
+    border:5px solid lightgray;
+    /* margin: 10%; */
+
 }
 
 .project-item:hover img {
@@ -758,6 +761,7 @@ header.jumbotron{
 	-moz-transform: scale(1.3);
 	-ms-transform: scale(1.3);
     transform:scale(1.3);
+    
 }
 
 
@@ -975,7 +979,7 @@ header.jumbotron{
 }
 
 .modal-body .btn-theme{
-    margin-top:48px;
+    /* margin-top:48px; */
 }
 
 .modal-body .loader {
