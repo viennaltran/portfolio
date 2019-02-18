@@ -367,6 +367,7 @@ header.jumbotron{
 	background:#fff;
     background:rgba(255,255,255,0.9);
     padding:20px 0;
+    background:none;
 }
 
 .jumbotron .left-col{
@@ -391,7 +392,10 @@ header.jumbotron{
     padding:18px 5px 12px 30px;
     font-size:38px;
     font-weight:300;
-    line-height:48px;
+    /* line-height:48px; */
+    line-height:70px;
+    margin-right: 20px;
+    color:white;
 }
 
 .jumbotron .left-col p span{
@@ -400,13 +404,21 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    display:inline-block;
+    /* display:inline-block;
     margin:0;
     padding:10px 30px 10px 5px;
     font-size:100px;
     line-height:110px;
     font-weight:900;
-    text-transform:uppercase;
+    text-transform:uppercase; */
+    display: inline-block;
+    margin: 0;
+    /* padding: 10px 30px 10px 5px; */
+    font-size: 52px;
+    line-height: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:white;
 }
 
 .jumbotron .home-slider .slides li {
@@ -1534,7 +1546,8 @@ header.jumbotron{
 
 .jumbotron .left-col p{
     font-size:28px;
-    line-height:32px;
+    /* line-height:32px; */
+    line-height:90px; 
 }
 
 .jumbotron .left-col p span{
@@ -1542,8 +1555,12 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    font-size:82px;
-    line-height:82px;
+    /* font-size:82px;
+    line-height:82px; */
+
+    font-size:42px;
+    line-height:123px;
+    
 }
 
 }
@@ -1560,7 +1577,8 @@ header.jumbotron{
 }
 
 .jumbotron .left-col p{
-    padding:10px;
+    /* padding:10px; */
+    line-height: 0px;
 }
 
 .jumbotron .right-col{
@@ -1569,7 +1587,8 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    padding:10px;
+    /* padding:10px; */
+    line-height:90px;
 }
 
 }
@@ -1625,7 +1644,8 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    font-size:62px;
+    /* font-size:62px; */
+    font-size:30px;
     line-height:62px;
 }
 
@@ -1657,7 +1677,8 @@ h1.section-title{
 @media (max-width: 479px) {
 
 .jumbotron .right-col p{
-    font-size:38px;
+    /* font-size:38px; */
+    font-size:20px;
     line-height:38px;
 }
 
