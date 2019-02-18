@@ -134,9 +134,12 @@ $(document).ready(function() {
 		
 		if(title==='Pocket Cards'){
 			$('#pocketcards-repo').removeClass('hide');
+			$('#gracehopper-repo').addClass('hide');
+			$('#sgt-repo').addClass('hide');
 		}else if (title==='Grace Hopper'){
 			$('#pocketcards-repo').addClass('hide');
 			$('#gracehopper-repo').removeClass('hide');
+			$('#sgt-repo').addClass('hide');
 		}else if (title==='Student Grade Table'){
 			$('#pocketcards-repo').addClass('hide');
 			$('#gracehopper-repo').addClass('hide');
