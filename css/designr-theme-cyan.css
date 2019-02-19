@@ -164,7 +164,6 @@ body {
 
 .btn-theme{
 	color:#fff;
-    /* background-color:#8aaad9; */
     background-color: royalblue;
 	padding:15px 90px;
 	font-size:24px;
@@ -392,7 +391,6 @@ header.jumbotron{
     padding:18px 5px 12px 30px;
     font-size:38px;
     font-weight:300;
-    /* line-height:48px; */
     line-height:70px;
     margin-right: 20px;
     color:white;
@@ -404,16 +402,8 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    /* display:inline-block;
-    margin:0;
-    padding:10px 30px 10px 5px;
-    font-size:100px;
-    line-height:110px;
-    font-weight:900;
-    text-transform:uppercase; */
     display: inline-block;
     margin: 0;
-    /* padding: 10px 30px 10px 5px; */
     font-size: 45px;
     line-height: 100px;
     font-weight: 900;
@@ -594,10 +584,6 @@ header.jumbotron{
 	background:#fff;
 }
 
-/* .skills .col-sm-3 {
-    margin-bottom:80px;
-} */
-
 #skills.cuda-section {
     padding-bottom:40px;
 }
@@ -643,14 +629,7 @@ header.jumbotron{
 
 .icon-container{
     text-align:center;
-    /* margin:95px; */
-    /* margin-top:-20%; */
 }
-
-/* .skill-icons{
-    width:60%;
-} */
-
 
 /*----------------------
 -----Portfolio Styles---
@@ -662,7 +641,6 @@ header.jumbotron{
 
 #portfolio .section-title {
     font-weight:300;
-    /* margin-bottom:60px; */
     margin: 0 auto;
 }
 
@@ -764,7 +742,6 @@ header.jumbotron{
     -webkit-transition:-webkit-transform 0.3s ease-out;
     transition:transform 0.3s ease-out;
     border:5px solid lightgray;
-    /* margin: 10%; */
 
 }
 
@@ -979,7 +956,6 @@ header.jumbotron{
 
 .modal-body h1{
     color:#8aaad9;
-    /* margin:200px 0 24px; */
     font-size:32px;
     text-align: center;
 }
@@ -988,10 +964,6 @@ header.jumbotron{
     color:#aaa;
     margin:0 0 24px;
     
-}
-
-.modal-body .btn-theme{
-    /* margin-top:48px; */
 }
 
 .modal-body .loader {
@@ -1156,7 +1128,6 @@ header.jumbotron{
     background:transparent;
     color:#fff;
     padding:80px 0; 
-    /* background-color: #8aaad9; */
 }
 
 #contact .section-title {
@@ -1240,7 +1211,7 @@ header.jumbotron{
     box-shadow:none;
     margin-bottom:30px;
     height:68px;
-    font-size:30px;
+    font-size:25px;
     line-height:48px;
     font-weight:300;
     color:#8aaad9;
@@ -1273,7 +1244,7 @@ header.jumbotron{
     height:auto;
 	max-width:100%;
 	min-width:100%;
-    font-size:30px;
+    font-size:25px;
     line-height:42px;
 	padding-top:14px;
 }
@@ -1546,23 +1517,17 @@ header.jumbotron{
 
 .jumbotron .left-col p{
     font-size:28px;
-    /* line-height:32px; */
     line-height:90px; 
-}
+    }
 
 .jumbotron .left-col p span{
     font-size:36px;
-}
+    }
 
 .jumbotron .right-col p{
-    /* font-size:82px;
-    line-height:82px; */
-
     font-size:30px;
     line-height:123px;
-    
-}
-
+    }
 }
 
 @media (max-width: 991px) {
@@ -1577,7 +1542,6 @@ header.jumbotron{
 }
 
 .jumbotron .left-col p{
-    /* padding:10px; */
     line-height: 0px;
 }
 
@@ -1587,10 +1551,8 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    /* padding:10px; */
     line-height:90px;
-}
-
+    }
 }
 
 @media (max-width: 768px) {
@@ -1644,7 +1606,6 @@ header.jumbotron{
 }
 
 .jumbotron .right-col p{
-    /* font-size:62px; */
     font-size:30px;
     line-height:62px;
 }
@@ -1677,7 +1638,6 @@ h1.section-title{
 @media (max-width: 479px) {
 
 .jumbotron .right-col p{
-    /* font-size:38px; */
     font-size:15px;
     line-height:38px;
 }
