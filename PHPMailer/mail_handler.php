@@ -1,11 +1,13 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+
 require_once('email_config.php');
-require_once('phpmailer/PHPMailer/src/Exception.php');
-require_once('phpmailer/PHPMailer/src/PHPMailer.php');
-require_once('phpmailer/PHPMailer/src/SMTP.php');
+require_once('src/Exception.php');
+require_once('src/PHPMailer.php');
+require_once('src/SMTP.php');
 
 $mail = new PHPMailer\PHPMailer\PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
@@ -24,11 +26,11 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = 'example@gmail.com';  // sender's email address (shows in "From" field)
-$mail->FromName = 'Example Name';   // sender's name (shows in "From" field)
-$mail->addAddress('recipient1@example.com', 'First Recipient\'s name');  // Add a recipient (name is optional)
+$mail->From = 'vtranserver@gmail.com';  // sender's email address (shows in "From" field)
+$mail->FromName = 'mailer daemon';   // sender's name (shows in "From" field)
+$mail->addAddress('viennaltran@gmail.com', 'Vienna');  // Add a recipient (name is optional)
 //$mail->addAddress('ellen@example.com');                        // Add a second recipient
-$mail->addReplyTo('example@gmail.com');                          // Add a reply-to address
+$mail->addReplyTo($_POST['email']);                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 
@@ -36,8 +38,14 @@ $mail->addReplyTo('example@gmail.com');                          // Add a reply-
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->Subject = 'mailer message from '.$_POST['name'];
+$mail->Body    = "
+    time: ".date('Y-m-d H:is:s')."<br>
+    from: {$_SERVER['REMOTE_ADDR']}<br>
+    name: {$_POST['name']}<br>
+    email: {$_POST['email']}<br>
+    message: {$_POST['body']}
+";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
