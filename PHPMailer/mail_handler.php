@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 
 require_once('email_config.php');
 require_once('src/Exception.php');
