@@ -277,6 +277,7 @@ body {
     font-weight:400;
     background:transparent;
     color:#fff;
+    text-shadow: 1px 1px black;
 }
 
 
@@ -284,6 +285,7 @@ body {
 #main-nav.scrolled .nav a:active,
 #main-nav.scrolled .nav a:hover{
     color:#8aaad9;
+    text-shadow: none;
 }
 
 
@@ -329,7 +331,8 @@ body {
 #main-nav.scrolled .nav a:hover:before,
 #main-nav.scrolled .nav li.active a:before {
 	color: #8aaad9;
-	text-shadow: 12px 0 #8aaad9, -12px 0 #8aaad9;
+    text-shadow: 12px 0 #8aaad9, -12px 0 #8aaad9;
+    
 }
 
 .no-textshadow #main-nav .nav a:before {
@@ -358,6 +361,7 @@ header.jumbotron{
 .jumbotron .left-col,
 .jumbotron .right-col{
     float:left;
+    text-shadow: 2px 2px black;
 }
 
 .jumbotron .message-box{
@@ -581,7 +585,7 @@ header.jumbotron{
     padding-top:80px;
     padding-bottom: 80px;
     color:#637187;
-	background:#fff;
+    background:#fff;
 }
 
 #skills.cuda-section {
@@ -993,7 +997,7 @@ header.jumbotron{
     opacity:1;
 }
 
-.git-repo {
+.git-repo{
     margin-left:1%;
 }
 
@@ -1589,6 +1593,7 @@ header.jumbotron{
     color:#8aaad9;
     line-height:42px;
     text-align:center;
+    text-shadow: none;
 }
 
 #main-nav .nav a:before {
@@ -1638,7 +1643,6 @@ h1.section-title{
 }
 
 }
-
 @media (max-width: 767px){
     img.img-responsive.img-center{
         display: block;

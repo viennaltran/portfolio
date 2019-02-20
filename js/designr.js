@@ -26,6 +26,26 @@ $(document).ready(function() {
 		}
 	});
 
+	$(window).scroll(function(){
+		if ($(window).scrollTop()>0){
+			$('#main-nav').addClass('hide');
+			$('#site-nav').removeClass('collapse in');
+			$('#site-nav').addClass('collapse');
+		 }
+		else{
+		  $('#main-nav').removeClass('hide');
+		 }
+	});
+
+	$(window).scroll(function(){
+		if (navigator.onLine == false) {
+			
+			$('#submit').html('<i class="fa fa-remove"></i>'+'Error!');
+		  } else {
+			return;
+		  }
+	});
+	
 	/*============================================
 	ScrollTo Links
 	==============================================*/
