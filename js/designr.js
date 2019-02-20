@@ -207,8 +207,6 @@ $(document).ready(function() {
 	  "customCallback": handleTweets,
 	  "showInteraction": true
 	};
-	
-	twitterFetcher.fetch(configTweets);
 
 	function handleTweets(tweets){
 	
