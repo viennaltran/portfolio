@@ -24,26 +24,10 @@ $(document).ready(function() {
 		else{
 			$('#main-nav').addClass('scrolled');    
 		}
-	});
-
-	$(window).scroll(function(){
 		if ($(window).scrollTop()>0){
-			$('#main-nav').addClass('hide');
 			$('#site-nav').removeClass('collapse in');
 			$('#site-nav').addClass('collapse');
 		 }
-		else{
-		  $('#main-nav').removeClass('hide');
-		 }
-	});
-
-	$(window).scroll(function(){
-		if (navigator.onLine == false) {
-			
-			$('#submit').html('<i class="fa fa-remove"></i>'+'Error!');
-		  } else {
-			return;
-		  }
 	});
 	
 	/*============================================
@@ -281,5 +265,18 @@ $(document).ready(function() {
 			$.waypoints('refresh');
 		},1000);
 	}
+
+	/*============================================
+	Show error when offline function
+	==============================================*/
+
+	$("#submit").click(function(){
+		if (navigator.onLine == false) {
+			$('button').removeAttr("data-sending-message");
+			$('button').attr('data-sending-message','Server Error!');
+		  } else {
+			return;
+		  }
+	});
 
 });	
