@@ -395,7 +395,7 @@ header.jumbotron{
     padding:18px 5px 12px 30px;
     font-size:38px;
     font-weight:300;
-    line-height:70px;
+    line-height:65px;
     margin-right: 20px;
     color:white;
 }
@@ -1295,6 +1295,11 @@ header.jumbotron{
 }
 
 .contact-title{
+    color: #8aaad9;
+    text-shadow: 1px 1px 1px white;
+}
+
+.contact-info{
     color: aliceblue;
 }
 
@@ -1652,6 +1657,14 @@ h1.section-title{
 
     .about-content{
         text-align:center;
+    }
+
+    div.section-title, h1.section-title {
+        margin: 0px 0 50px; 
+    }
+
+    #contact .section-title {
+        margin-bottom: 10px;
     }
 }
 
