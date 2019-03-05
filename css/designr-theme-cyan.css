@@ -800,6 +800,19 @@ header.jumbotron{
     border-width:20px;
 }
 
+.japanese-title {
+    color:#fff;
+    margin:0;
+    padding:16px;
+    font-size:21px;
+    line-height:24px;
+    font-weight:300;
+}
+
+.japanese-title-center{
+    text-align: center;
+}
+
 
 .project-item .hover-mask .project-title {
     color:#fff;
